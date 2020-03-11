@@ -1,20 +1,16 @@
 import java.util.*;
 public class MissedCall 
 {
-	static HashMap<Long,String> hm;
-	static ArrayList<MissedDetails> arr;
-	MissedCall()
+	public static void main(String args[])
 	{
+		HashMap<Long,String> hm;
+		ArrayList<MissedDetails> arr;
 		hm=new HashMap<Long,String>();
 		arr=new ArrayList<MissedDetails>(10);
 		hm.put((long)900820934,"ABC");
 		hm.put((long)900820934,"CDF");
 		hm.put((long)900820934,"FGH");
 		hm.put((long)900820871,"IJK");
-		
-	}
-	public static void main(String args[])
-	{
 		Scanner sc=new Scanner(System.in); 
 		int ch;
 		String name,time;long num;
