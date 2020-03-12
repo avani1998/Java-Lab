@@ -36,10 +36,10 @@ public class MissedCall
 					time=sc.next();
 				}
 				MissedDetails md=new MissedDetails(name,time,num);
-				if(arr.size()==10)
+				if(arr.size()>=10)
 				{
 					arr.remove(0);
-					arr.add(1,md);
+					arr.add(md);
 				}
 				else 
 					arr.add(md);
